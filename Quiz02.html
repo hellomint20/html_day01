@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="Quiz.html" method="get">
+		<table>
+			<tr>
+				<td>다음 <span style="background: tan;"><b>내용에 맞게 입력</b></span>하시오.<br>전공분야를 입력하세요.
+				<select name="sel">
+					<option value="s1">소프트웨어
+					<option value="s2">컴퓨터공학
+					<option value="s3">화학공학
+				</select><br><br>
+				이름 <input type="text" placeholder="이름"><br><br>
+				아이디 <input type="text" placeholder="아이디"><br><br>
+				비밀번호 <input type="text" placeholder="비밀번호"><br><br>
+				</td>
+				<td><img alt="이미지" src="img.png" width="100"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset>
+						<legend>성별 조사</legend>
+						여성<input type="radio" name="gen" checked="checked">
+						남성<input type="radio" name="gen">
+					</fieldset>
+					<fieldset>
+						<legend>취미 조사</legend>
+						책읽기<input type="checkbox" name="hobby">
+						공부하기<input type="checkbox" name="hobby">
+						책 읽으며 공부하기<input type="checkbox" name="hobby">
+						컴퓨터<input type="checkbox" name="hobby">
+					</fieldset>
+					<fieldset>
+						<legend>하고 싶은 말</legend>
+						<textarea style="resize: none; overflow-y:scroll;" rows="3" cols="50" draggable="true"></textarea>
+					</fieldset>
+					<button type="submit">완료</button>
+					<button type="reset" value="초기화">다시작성</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
